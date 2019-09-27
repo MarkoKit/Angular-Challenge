@@ -1,0 +1,81 @@
+#body {
+    float: center;
+    width: 90%;
+    margin: 30px auto;
+    border: 2px solid #000000;
+    border-radius: 25px;    
+    background-image: url("https://marketplace.canva.com/MADeryqCiPc/1/thumbnail_large/canva-white-texture-background-MADeryqCiPc.jpg");
+}
+
+#topic {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    background-color: darkgray;
+    padding: 2.5%;
+    border-radius: 3%;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    flex-wrap:  wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: white;
+    //border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 30%;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+    height: 40%;
+}
+
+.box p {
+    font-size: 18.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 20px;
+}
+
+.box:hover {
+    box-shadow: 0 0px 8px 8px rgba(0, 174, 255, 0.2);
+    cursor: pointer;
+}
+
+.total {
+    font-size: 32px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    display: inline-block;
+}
+
+.btn {
+    background-color:#33a3ff;
+	border-radius:4px;
+    border:1px solid #000000;
+    margin-left: 20px;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.boxNoClick {
+    pointer-events: none;
+    background-color: white;
+    //border: 2px solid black;
+    box-shadow: none;
+}

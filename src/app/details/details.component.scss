@@ -1,0 +1,32 @@
+#body {
+    float: center;
+    width: 90%;
+    margin: 30px auto;
+    border: 2px solid black;
+    border-radius: 25px;    
+    background-image: url("https://marketplace.canva.com/MADeryqCiPc/1/thumbnail_large/canva-white-texture-background-MADeryqCiPc.jpg");
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color:#33a3ff;
+	border-radius:4px;
+    border:1px solid #000000;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:16px 31px;
+    text-decoration:none;
+    margin: 30px 0px; 
+}
+
+.btn:hover {
+    cursor: pointer;
+}

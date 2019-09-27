@@ -1,0 +1,16 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+<div id="body">
+    <div class="content">
+        <div>
+            <h1 style="font-size: 30px; font-family: 'Open Sans', sans-serif; color: black;">Product details:</h1>
+            <hr>
+            <h2 style="font-size: 25px;">{{ product.cardTitle }}</h2>
+            <img src="{{product.primaryMediaUrl}}" style="width: 30%; height: 10%; margin: 0% auto;"><img><br>
+            <p><b>Descritpion:</b>  {{ product.cardDescription }}</p>
+            <p><b>Price: </b>{{ product.listOfPlans[0].price.amount }} {{ product.listOfPlans[0].price.currency }}</p>
+            
+            <button class="btn" (click)="addToCart(product.cardTitle, product.listOfPlans[0].price.amount)" [routerLink]="['/']">Add to cart</button>
+        </div>
+    </div>
+</div>

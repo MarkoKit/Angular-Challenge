@@ -1,0 +1,22 @@
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+<div id="body">
+    <div class="content">
+        <div>
+            <h2 class="total">TOTAL: {{ sumCart }} €</h2>
+            <button class="btn" (click)="clearOut()">Izbriši</button>
+        </div><br>
+        <hr style="color: rgb(0, 0, 0)">
+        <div style="margin-top: 40px;" class="container">
+            <ng-container *ngFor="let product of products;" >            
+                <div [ngClass]="readLocalStorageValue('cart').includes(product.cardTitle) ? 'box boxNoClick': 'box' " [routerLink]="['/details']" (click)="parseObject(product)">
+                    <h2 style="font-size: 25px; font-family: 'Open Sans', sans-serif; color: gray;">{{ product.cardTitle }}</h2>
+                    <hr style="width: 70%;">
+                    <p>Description: {{ product.cardDescription }}</p>
+                    <p>Quantity: {{ product.availableQuantity }}</p>
+                    <br>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</div>
